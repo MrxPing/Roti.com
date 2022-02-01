@@ -2,7 +2,7 @@
 
 body{
 	font-family: 'Roboto', sans-serif;
-    background-image: url("./bgimg.jpg");
+    background-color: #191919;
 }
 * {
 	margin: 0;
@@ -252,10 +252,31 @@ svg{
   border-radius: 10px;
   width: 100%;
   height: auto;
+  animation: floaty 2s infinite;
+}
+
+@keyframes floaty {
+  0%, 100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes zoomy {
+  0%, 100% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(0.8);
+  }
 }
 
 .main .about {
-    background: #18AEA4;
+    background: #00645e;
     margin-top: 2rem;
   }
   .main .about .container {
@@ -276,14 +297,14 @@ svg{
     font-weight: 700;
     line-height: inherit;
     text-transform: uppercase;
-    color: #006aff;
+    color: #fff;
   }
   .main .about-text__subs {
     font-family: inherit;
     font-size: 1rem;
     font-weight: 400;
     text-transform: capitalize;
-    color: #fff;
+    color: rgb(226, 226, 226);
     margin: 1rem 0 0 0;
   }
   .main .service {

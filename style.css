@@ -3,6 +3,8 @@
 body{
 	font-family: 'Roboto', sans-serif;
     background-color: #272934;
+    
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 * {
 	margin: 0;
@@ -15,6 +17,10 @@ i {
 .navbar-logo{
 	padding: 15px;
 	color: #fff;
+}
+.navbar img{
+  width: 50px;
+  padding: 5px;
 }
 .navbar-mainbg{
 	background-color: #18AEA4;
@@ -56,7 +62,7 @@ i {
 	right: 20px;
 	top: 10px;
 	font-size: 14px;
-	font-family: "Font Awesome 5 Free";
+	font-family: inherit;
 	display: inline-block;
 	padding-right: 3px;
 	vertical-align: middle;
@@ -214,6 +220,7 @@ i {
 .hero-text__btn:hover{
     color:#fff;
     border:1px solid #fff;
+    text-decoration: none;
     transition:.3s all;
     overflow:hidden;
   }
@@ -238,7 +245,6 @@ i {
   }
 .hero-image__main {
   border-radius: 10px;
-  box-shadow: 5px 10px rgba(0, 35, 78, 0.2);
   width: 100%;
   height: auto;
 }
